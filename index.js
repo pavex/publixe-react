@@ -11,6 +11,7 @@ import Layout from './lib/ui/Layout.js';
 import Toolbar from './lib/ui/Toolbar.js';
 import Input from './lib/ui/Input.js';
 import Form from './lib/ui/Form.js';
+import Loader from './lib/ui/Loader.js';
 import Block from './lib/ui/Block.js';
 import DataGrid from './lib/ui/DataGrid.js';
 
@@ -40,5 +41,6 @@ module.exports = {
 	Input: Input,
 	Form: Form,
 	Block: Block,
+	Loader: Loader,
 	DataGrid: DataGrid
 };
