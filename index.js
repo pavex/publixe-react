@@ -13,6 +13,7 @@ import Input from './lib/ui/Input.js';
 import Form from './lib/ui/Form.js';
 import Loader from './lib/ui/Loader.js';
 import Block from './lib/ui/Block.js';
+import Menu from './lib/ui/Menu.js';
 import DataGrid from './lib/ui/DataGrid.js';
 
 
@@ -42,5 +43,6 @@ module.exports = {
 	Form: Form,
 	Block: Block,
 	Loader: Loader,
+	Menu: Menu,
 	DataGrid: DataGrid
 };

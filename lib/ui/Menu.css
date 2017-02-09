@@ -1,0 +1,57 @@
+/**
+ * Menu
+ */
+.px-menu {
+	height:100%;
+	overflow:scroll;
+	vertical-align:middle;
+	background-color:Menu;
+}
+.px-menu-container {
+	display:block;
+}
+.px-menu-header {
+	display:table-cell;
+	height:64px;
+	vertical-align:middle;
+	padding:0 20px 0 20px;
+}
+.px-menu-item {
+	display:block;
+	vertical-align:middle;
+	line-height:32px;
+	padding:8px 20px 8px 20px;
+	font-weight:bold;
+	border-top:1px solid ThreeDHighlight;
+	cursor:pointer;
+}
+.px-menu-item:hover {
+	background-color:Highlight;
+}		
+.px-menu-group {
+	padding:0 0 8px 0;
+}
+.px-menu-group h3 {
+	padding:16px 20px 0 20px;
+	font-weight:bold;
+	border-top:1px solid ThreeDHighlight;
+}
+.px-menu-group >.px-menu-item {
+	padding:4px 20px 4px 20px;
+	font-weight:bold;
+	border-top:none;
+}
+.px-menu-group >.px-menu-item span {
+	opacity:0.7;
+}
+
+/**
+ * Semantic UI component adjust
+ */
+.px-menu-item .ui.label {
+	float:right;
+	margin-top:3px;
+}
+.px-menu-item i.icon {
+	float:right;
+}
