@@ -24,9 +24,13 @@
 	font-weight:bold;
 	border-top:1px solid ThreeDHighlight;
 	cursor:pointer;
+	transition: background-color 0.25s;
 }
 .px-menu-item:hover {
 	background-color:Highlight;
+}		
+.px-menu-item.selected {
+	background-color:ButtonHighlight;
 }		
 .px-menu-group {
 	padding:0 0 8px 0;
