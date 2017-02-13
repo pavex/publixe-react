@@ -3,3 +3,10 @@
  */
 .px-form {
 }
+
+/**
+ * Semantic UI patch
+ */
+.ui.input input[type=text]:read-only { 
+	color:InactiveCaptionText;
+}
