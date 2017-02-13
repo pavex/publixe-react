@@ -1,0 +1,27 @@
+/**
+ * Toolbar
+ */
+.px-toolbar {
+}
+.px-toolbar.left {
+	float:left;
+}
+.px-toolbar.right {
+	float:right;
+}
+.px-toolbar.flat {
+	line-height:64px;
+	vertical-align:middle;
+	padding:0 10px 0 10px;
+}
+
+/**
+ * Separator
+ */
+.px-toolbar-separator {
+	display:inline;
+	min-height:1em;
+	vertical-align:baseline;
+	margin-right:0.2em;
+	border:1px dotted ThreeDShadow
+}
