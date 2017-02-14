@@ -7,17 +7,17 @@
 	border-radius:.3rem;
 	text-align:left;
 }
-.px-dialog header {
+.px-dialog .px-dialog-header {
 	padding:1.25rem 1.5rem;
     border-bottom:1px solid rgba(34,36,38,.15);
 	font-size:1.42857143rem;
     line-height:1.2857em;
     font-weight:700;
 }
-.px-dialog main {
+.px-dialog .px-dialog-content {
 	padding:1.5rem;
 }
-.px-dialog footer {
+.px-dialog .px-dialog-footer {
     padding:1rem;
 	background-color:#F9FAFB;
     border-top:1px solid rgba(34,36,38,.15);
