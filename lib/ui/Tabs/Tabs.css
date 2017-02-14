@@ -1,0 +1,53 @@
+/**
+ * Tabs
+ */
+.px-tabs {
+	xdisplay:table-cell;
+	height:100%;
+	xheight:500px;
+}
+.px-tabs .px-tab-captions {
+	display:block;
+	border-bottom:1px solid ThreeDHighlight;
+	padding-top:1.5em;
+	padding-left:1.5em;
+	background-color:Menu;
+}
+.px-tabs .px-tab-captions a {
+	display:inline-block;
+	padding:1em;
+	margin-bottom:-1px;
+	xmargin-right:1px;
+	border:1px solid ThreeDHighlight;
+	xbackground-color:ButtonHighlight;
+	xborder-bottom:1px solid ThreeDHighlight;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	cursor:pointer;
+}
+.px-tabs .px-tab-captions a.active {
+	padding:1em;
+	border:1px solid ThreeDHighlight;
+	xbackground-color:green;
+	xcolor:white;
+	font-weight:bold;
+	border-bottom:1px solid Window;
+	background-color:Window;
+}
+.px-tabs .px-tab-captions a:hover {	
+	background-color:Window;
+}
+.px-tabs .px-tab-captions a.active:hover {	
+	background-color:Window;
+}
+
+
+.px-tabs >section {
+	display:none;
+	padding:1.5em;
+	xheight:100%;
+}
+.px-tabs >section.active {
+	display:block;
+}
+
