@@ -28,7 +28,6 @@
 	border-bottom-right-radius:.3rem;
     text-align:right;
 	position:absolute;
-	xbottom:-64px;
-	top:100%;
+	bottom:0;
 	width:100%;
 }

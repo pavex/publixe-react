@@ -2,6 +2,10 @@
  * Loader
  */
 .px-loader {
-	position:relative;
 	height:100%;
+}
+.ui.dimmer {
+}
+.ui.active.dimmer {
+	cursor:wait;
 }
