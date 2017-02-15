@@ -31,7 +31,10 @@
 }		
 .px-menu-item.selected {
 	background-color:ButtonHighlight;
-}		
+}
+.px-menu-item.disabled {
+	color:InactiveCaptionText;
+}
 .px-menu-group {
 	padding:0 0 8px 0;
 }
