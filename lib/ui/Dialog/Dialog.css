@@ -8,6 +8,7 @@
 	text-align:left;
 	position:relative;
 	padding-bottom:64px;
+	min-width:320px;
 }
 .px-dialog .px-dialog-header {
 	padding:1.25rem 1.5rem;
