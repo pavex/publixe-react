@@ -4,7 +4,7 @@
 .px-tabs {
 	xdisplay:table-cell;
 	height:100%;
-	xheight:500px;
+	height:500px;
 }
 .px-tabs .px-tab-captions {
 	display:block;
@@ -40,14 +40,19 @@
 .px-tabs .px-tab-captions a.active:hover {	
 	background-color:Window;
 }
-
-
 .px-tabs >section {
 	display:none;
 	padding:1.5em;
-	xheight:100%;
+	height:100%;
 }
 .px-tabs >section.active {
 	display:block;
 }
 
+
+/**
+ * Tabsheet
+ */
+.px-tabsheet {
+	height:100%;
+}
