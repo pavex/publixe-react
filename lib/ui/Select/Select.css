@@ -1,0 +1,14 @@
+/**
+ * Input
+ */
+
+
+/**
+ * Semantic UI patch
+ */
+.px-form-field >section >div {
+	min-height:2.7142em;
+}
+.ui.selection.dropdown {
+	position:absolute;
+}
