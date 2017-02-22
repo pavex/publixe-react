@@ -1,14 +1,19 @@
 /**
- * Input
+ * Select
  */
-
 
 /**
  * Semantic UI patch
  */
-.px-form-field >section >div {
-	min-height:2.7142em;
-}
 .ui.selection.dropdown {
-	position:absolute;
+	min-height:36px !important;
+	height:36px;
+	width:100%;
+	padding-top:10px !important;
+}
+.ui.selection.dropdown >.text {
+	padding-top:1px;
+}
+.ui.dropdown>.icon {
+	margin:-8px -12px 0 0 !important;
 }
