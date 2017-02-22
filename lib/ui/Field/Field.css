@@ -1,0 +1,31 @@
+/**
+ * Field container
+ */
+.px-field {
+	display:block;
+	padding:8px 0;
+}
+.px-field.inline {
+	display:inline-block;
+	padding-right:8px;
+}
+.px-field.inline:last-child {
+	padding-right:0;
+}
+.px-field >label {
+	display:inline-block;
+	font-weight:bold;
+	vertical-align:middle;
+}
+.px-field >.px-field-container {
+	display:inline-block;
+	width:100%;
+}
+.px-field.atop >label,
+.px-field.atop >.px-field-container {
+	display:block;
+}
+.px-field.right >label {
+	padding-right:8px;
+	text-align:right;
+}
