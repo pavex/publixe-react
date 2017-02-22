@@ -6,6 +6,11 @@
 /**
  * Semantic UI patch
  */
+.ui.input {
+	width:100%;
+	height:36px;
+	line-height:auto;
+}
 .ui.input input[type=text]:read-only { 
 	color:InactiveCaptionText;
 }
