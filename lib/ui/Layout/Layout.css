@@ -27,6 +27,7 @@ body {
 }
 .px-col {
 	display:table-cell;
+	vertical-align:top;
 }
 .px-col {
 	padding-left:15px;
