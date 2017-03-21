@@ -3,19 +3,32 @@
  */
 .px-tabs {
 	xdisplay:table-cell;
+	display:table;
+	xdisplay:block;
+	width:100%;
 	height:100%;
-	height:500px;
+	xheight:500px;
 }
 .px-tabs .px-tab-captions {
-	display:block;
-	border-bottom:1px solid ThreeDHighlight;
-	padding-top:1.5em;
-	padding-left:1.5em;
+	xdisplay:block;
+	display:table-row;
+	xborder-bottom:1px solid ThreeDHighlight;
+	xpadding-top:1.5em;
+	xpadding-left:1.5em;
 	background-color:Menu;
 }
+
+.px-tabs .px-tab-captions-container {
+	padding-top:1.5em;
+	padding-left:1.5em;
+	border-bottom:1px solid ThreeDHighlight;
+}
+
+
 .px-tabs .px-tab-captions a {
 	display:inline-block;
 	padding:1em;
+	xmargin-top:1.5em;	
 	margin-bottom:-1px;
 	xmargin-right:1px;
 	border:1px solid ThreeDHighlight;
@@ -25,6 +38,10 @@
 	border-top-right-radius:5px;
 	cursor:pointer;
 }
+.px-tabs .px-tab-captions a:first-child {
+	xmargin-left:1.5em;
+}
+
 .px-tabs .px-tab-captions a.active {
 	padding:1em;
 	border:1px solid ThreeDHighlight;
@@ -40,13 +57,14 @@
 .px-tabs .px-tab-captions a.active:hover {	
 	background-color:Window;
 }
-.px-tabs >section {
+.px-tabs >.px-tab-section {
 	display:none;
 	padding:1.5em;
 	height:100%;
 }
-.px-tabs >section.active {
-	display:block;
+.px-tabs >.px-tab-section.active {
+	display:table-row;
+	xdisplay:block;
 }
 
 
@@ -55,4 +73,8 @@
  */
 .px-tabsheet {
 	height:100%;
+}
+.px-tabsheet .px-tabsheet-container { 
+	height:100%;
+	padding:1.5em;
 }
