@@ -2,19 +2,12 @@
  * Tabs
  */
 .px-tabs {
-	xdisplay:table-cell;
 	display:table;
-	xdisplay:block;
 	width:100%;
 	height:100%;
-	xheight:500px;
 }
 .px-tabs .px-tab-captions {
-	xdisplay:block;
 	display:table-row;
-	xborder-bottom:1px solid ThreeDHighlight;
-	xpadding-top:1.5em;
-	xpadding-left:1.5em;
 	background-color:Menu;
 }
 
@@ -23,30 +16,20 @@
 	padding-left:1.5em;
 	border-bottom:1px solid ThreeDHighlight;
 }
-
-
 .px-tabs .px-tab-captions a {
 	display:inline-block;
 	padding:1em;
-	xmargin-top:1.5em;	
 	margin-bottom:-1px;
-	xmargin-right:1px;
 	border:1px solid ThreeDHighlight;
-	xbackground-color:ButtonHighlight;
-	xborder-bottom:1px solid ThreeDHighlight;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	cursor:pointer;
 }
 .px-tabs .px-tab-captions a:first-child {
-	xmargin-left:1.5em;
 }
-
 .px-tabs .px-tab-captions a.active {
 	padding:1em;
 	border:1px solid ThreeDHighlight;
-	xbackground-color:green;
-	xcolor:white;
 	font-weight:bold;
 	border-bottom:1px solid Window;
 	background-color:Window;
@@ -64,7 +47,6 @@
 }
 .px-tabs >.px-tab-section.active {
 	display:table-row;
-	xdisplay:block;
 }
 
 
