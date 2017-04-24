@@ -2,36 +2,56 @@
  * Dialog
  */
 .px-dialog {
+	
+	display:table;
+	overflow:hidden; /** to apply borders */
+	width:100%;
+	height:100%;
+	
 	background-color:Window;
 	box-shadow:1px 3px 3px 0 rgba(0,0,0,.2), 1px 3px 15px 2px rgba(0,0,0,.2);
 	border-radius:.3rem;
 	text-align:left;
-	position:relative;
-	padding-bottom:64px;
+	xposition:relative;
 	min-width:320px;
 }
 .px-dialog .px-dialog-header {
-	padding:1.25rem 1.5rem;
-	border-bottom:1px solid rgba(34,36,38,.15);
-	font-size:1.42857143rem;
-	line-height:1.2857em;
+	display:table-row;
+	height:64px;
+}
+.px-dialog .px-dialog-header h2 {
+	line-height:64px;
+	padding:0 1.5em 0 1.5em;
+	font-size:120%;
 	font-weight:700;
 }
 .px-dialog .px-dialog-content {
-	padding:1.5rem;
-	display:table;
+	display:table-row;
+	padding:1.5em;
 	width:100%;
 	height:100%;
 }
 .px-dialog .px-dialog-footer {
+	display:table-row;
+	height:64px;
+	line-height:64px;
+	text-align:right;
+	vertical-align:middle;
+	background-color:Menu;
+}
+.px-dialog .px-dialog-footer >span {
+	margin-right:20px;
+}
+
+/*
+.px-dialog .px-dialog-footer {
+	display:table-row;
 	padding:0 1rem;
 	line-height:64px;
 	background-color:Menu;
-	border-top:1px solid rgba(34,36,38,.15);
-	border-bottom-left-radius:.3rem;
-	border-bottom-right-radius:.3rem;
 	text-align:right;
-	position:absolute;
+	xposition:absolute;
 	bottom:0;
 	width:100%;
 }
+*/
