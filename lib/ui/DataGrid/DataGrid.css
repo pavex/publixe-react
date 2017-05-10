@@ -46,24 +46,25 @@
 	display:block;
 	overflow:auto;
 }
-.px-datagrid .body .rows .row:hover {
+.px-datagrid.px-datagrid-row-select .body .rows .row:hover {
 	background-color:Highlight;
 }
-.px-datagrid .body .rows .row.selected {
+.px-datagrid.px-datagrid-row-select .body .rows .row.selected {
 	background-color:navy;
 	color:Window;
 }
-.px-datagrid .body .rows .row.selected:hover {
+.px-datagrid.px-datagrid-row-select .body .rows .row.selected:hover {
 	color:Window;
 }
 .px-datagrid .body .rows .row >div {
-	xdisplay:inline-block;
 	float:left;
 	line-height:2.5em;
-	padding:0 8px 0 8px;
 	overflow:hidden;
 	white-space:nowrap;
-	text-overflow:ellipsis;
 	border-right:1px solid ThreeDlightShadow;
 	border-bottom:1px solid ThreeDlightShadow;
+}
+.px-datagrid .body .rows .row >div >span {
+	padding:0 8px 0 8px;
+	text-overflow:ellipsis;
 }
