@@ -7,8 +7,8 @@
  * Semantic UI patch
  */
 .ui.checkbox {
-	line-height:36px !important;
+	line-height:30px !important;
 }
 .ui.checkbox label:before {
-	top:9px !important;
+	top:6px !important;
 }
