@@ -6,13 +6,13 @@
  * Semantic UI patch
  */
 .ui.selection.dropdown {
-	min-height:36px !important;
-	height:36px;
+	height:30px !important;
+	min-height:28px !important;
 	width:100%;
-	padding-top:10px !important;
+	line-height:28px !important;
+	padding:0 8px !important;
 }
 .ui.selection.dropdown >.text {
-	padding-top:1px;
 }
 .ui.dropdown>.icon {
 	margin:-8px -12px 0 0 !important;
