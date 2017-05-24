@@ -70,20 +70,28 @@
 	border-right:1px solid ThreeDlightShadow;
 	border-bottom:1px solid ThreeDlightShadow;
 }
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div {
+	text-overflow:ellipsis;
+}
 .px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div >span {
 	padding:0 8px 0 8px;
-	text-overflow:ellipsis;
 }
 
 
 /**
  * Additional cell style
  */
-.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.crucial >span {
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.crucial >span,
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.crucial >div {
 	font-weight:bold;
 }
-.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.align-right {
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.align-right,
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.px-control-text.align-right >div >input {
 	text-align:right;
+}
+.px-datagrid .px-control-text,
+.px-datagrid .px-control-date {
+	background-color:InfoBackground;
 }
 
 
