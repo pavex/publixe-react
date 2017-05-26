@@ -37,6 +37,9 @@ input.px-datepicker-input {
 	color:ButtonShadow;
 	font-size:120% !important;
 }
+.px-datepicker input::placeholder {
+	color:ThreeDFace;	
+}
 .react-datepicker {
 	font-size:14px !important;
 	background-color:Window;
