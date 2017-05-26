@@ -7,8 +7,14 @@ import Error from './lib/scenes/Error.js';
 //
 import Dialog from './lib/ui/Dialog/';
 import Layout from './lib/ui/Layout/';
+import Panel from './lib/ui/Panel/';
+import Scrollbox from './lib/ui/Scrollbox/';
 import Toolbar from './lib/ui/Toolbar/';
 import Input from './lib/ui/Input/';
+import Select from './lib/ui/Select/';
+import Checkbox from './lib/ui/Checkbox/';
+import DatePicker from './lib/ui/DatePicker/';
+import Field from './lib/ui/Field/';
 import Form from './lib/ui/Form/';
 import Loader from './lib/ui/Loader/';
 import Menu from './lib/ui/Menu/';
@@ -34,8 +40,20 @@ module.exports = {
 // UI
 	Dialog: Dialog,
 	Layout: Layout,
+	Panel: Panel,
+	Scrollbox: Scrollbox,
+
+	Rows: Layout.Rows,
+	Row: Layout.Row,
+	Cols: Layout.Cols,
+	Col: Layout.Col,
+
 	Toolbar: Toolbar,
 	Input: Input,
+	Select: Select,
+	Checkbox: Checkbox,
+	DatePicker: DatePicker,
+	Field: Field,
 	Form: Form,
 	Loader: Loader,
 	Menu: Menu,
