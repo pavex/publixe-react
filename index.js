@@ -11,6 +11,7 @@ import Panel from './lib/ui/Panel/';
 import Scrollbox from './lib/ui/Scrollbox/';
 import Toolbar from './lib/ui/Toolbar/';
 import Input from './lib/ui/Input/';
+import TextArea from './lib/ui/TextArea/';
 import Select from './lib/ui/Select/';
 import Checkbox from './lib/ui/Checkbox/';
 import DatePicker from './lib/ui/DatePicker/';
@@ -50,6 +51,7 @@ module.exports = {
 
 	Toolbar: Toolbar,
 	Input: Input,
+	TextArea: TextArea,
 	Select: Select,
 	Checkbox: Checkbox,
 	DatePicker: DatePicker,
