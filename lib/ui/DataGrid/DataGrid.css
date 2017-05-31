@@ -3,11 +3,19 @@
  */
 .px-datagrid {
 	display:block;
-	overflow:scroll;
 	width:100%;
 	height:100%;
+	position:relative;
+}
+.px-datagrid .px-datagrid-scrollbox {
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-color:AppWorkspace;
 	border:1px solid ThreeDlightShadow;
-	user-select:none;
+	overflow:scroll;
 }
 .px-datagrid .px-datagrid-container {
 	position:relative;
@@ -81,8 +89,8 @@
 /**
  * Additional cell style
  */
-.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.crucial >span,
-.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.crucial >div {
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.important >span,
+.px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.important >div {
 	font-weight:bold;
 }
 .px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row >div.align-right,
