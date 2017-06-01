@@ -29,3 +29,7 @@
 	padding-right:8px;
 	text-align:right;
 }
+.px-field.important .px-field-container input,
+.px-field.important .px-field-container .ui.selection.dropdown {
+	background-color:InfoBackground;
+}
