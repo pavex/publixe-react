@@ -1,5 +1,6 @@
 import Application from './lib/Application.js';
 import Scene from './lib/Scene.js';
+import Form from './lib/Form.js';
 //
 import Alert from './lib/scenes/Alert.js';
 import Confirm from './lib/scenes/Confirm.js';
@@ -16,7 +17,6 @@ import Select from './lib/ui/Select/';
 import Checkbox from './lib/ui/Checkbox/';
 import DatePicker from './lib/ui/DatePicker/';
 import Field from './lib/ui/Field/';
-import Form from './lib/ui/Form/';
 import Loader from './lib/ui/Loader/';
 import Menu from './lib/ui/Menu/';
 import Tabs from './lib/ui/Tabs/';
@@ -33,6 +33,9 @@ module.exports = {
 // Exteded component/Scene component with Navigator
 	Scene: Scene,
 
+// Form filler
+	Form: Form,
+
 // Specific scenes
 	Alert: Alert,
 	Confirm: Confirm,
@@ -48,6 +51,7 @@ module.exports = {
 	Row: Layout.Row,
 	Cols: Layout.Cols,
 	Col: Layout.Col,
+	Enter: Layout.Enter,
 
 	Toolbar: Toolbar,
 	Input: Input,
@@ -56,7 +60,6 @@ module.exports = {
 	Checkbox: Checkbox,
 	DatePicker: DatePicker,
 	Field: Field,
-	Form: Form,
 	Loader: Loader,
 	Menu: Menu,
 	Tabs: Tabs,
