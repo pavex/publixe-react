@@ -3,7 +3,7 @@
  */
 .px-dialog {
 	display:table;
-	overflow:hidden; /** to apply borders */
+	__overflow:hidden; /** to apply borders */
 	width:100%;
 	height:100%;
 	__background-color:Window;
@@ -27,11 +27,23 @@
 	border-bottom:2px solid Background;
 }
 .px-dialog .px-dialog-content {
-	__display:table-row;
-	padding:8px;
+	xdisplay:table-row;
 	width:100%;
 	height:100%;
+	position:relative;
+	xborder:2px red solid;
 }
+.px-dialog .px-dialog-content .px-dialog-content-container {
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	padding:8px;
+	xborder:1px red solid;
+}
+
 .px-dialog .px-dialog-footer {
 	display:table-row;
 	height:64px;
