@@ -9,7 +9,7 @@
 	__background-color:Window;
 	background-color:Menu;
 	box-shadow:1px 3px 3px 0 rgba(0,0,0,.2), 1px 3px 15px 2px rgba(0,0,0,.2);
-	border-radius:.3rem;
+	border-radius:4px;
 	text-align:left;
 	__position:relative;
 	min-width:320px;
@@ -27,23 +27,11 @@
 	border-bottom:2px solid Background;
 }
 .px-dialog .px-dialog-content {
-	xdisplay:table-row;
+	display:table-cell;
 	width:100%;
 	height:100%;
-	position:relative;
-	xborder:2px red solid;
+	xborder:2px green solid;
 }
-.px-dialog .px-dialog-content .px-dialog-content-container {
-	display:block;
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	padding:8px;
-	xborder:1px red solid;
-}
-
 .px-dialog .px-dialog-footer {
 	display:table-row;
 	height:64px;
@@ -82,6 +70,15 @@
 }
 .px-dialog-wrapper-content {
 	display:inline-block;	
+}
+
+
+/**
+ */
+.px-dialog-wrapper.loading {
+	pointer-events:none;
+/*	opacity:0.5; */
+	cursor:wait;
 }
 
 
