@@ -1,0 +1,71 @@
+/**
+ * DataGrid
+ */
+.px-datagrid {
+	display:block;
+	overflow:scroll;
+	width:100%;
+	height:100%;
+	border:1px solid ThreeDlightShadow;
+	user-select:none;
+}
+.px-datagrid .container {
+	position:relative;
+	display:block;
+}
+.px-datagrid .header {
+	position:absolute;
+	top:0;
+/*	z-index:1024; */
+	background-color:WindowFrame;
+	color:WindowText;
+	font-weight:bold;
+}
+.px-datagrid .header .cols {
+}
+.px-datagrid .header .cols .col {
+	display:inline-block;
+	xoverflow:hidden;
+	xwhite-space:nowrap;
+	xtext-overflow:ellipsis;
+	xpadding:8px;
+	line-height:2.5em;
+	padding:0 8px 0 8px;
+	border-right:1px dotted ThreeDDarkShadow;
+}
+.px-datagrid .header .cols .col:last-child {
+	border-right:1px solid ThreeDlightShadow;
+}
+.px-datagrid .body {
+	padding-top:2.5em;
+	xborder-left:1px green solid;
+	border-top:1px green solid;
+}
+.px-datagrid .body .rows {
+}
+.px-datagrid .body .rows .row {
+	display:block;
+	overflow:auto;
+}
+.px-datagrid.px-datagrid-row-select .body .rows .row:hover {
+	background-color:Highlight;
+}
+.px-datagrid.px-datagrid-row-select .body .rows .row.selected {
+	background-color:navy;
+	color:Window;
+}
+.px-datagrid.px-datagrid-row-select .body .rows .row.selected:hover {
+	color:Window;
+}
+.px-datagrid .body .rows .row >div {
+	float:left;
+	line-height:3em;
+	overflow:hidden;
+	white-space:nowrap;
+	border-right:1px solid ThreeDlightShadow;
+	border-bottom:1px solid ThreeDlightShadow;
+}
+.px-datagrid .body .rows .row >div >span {
+	padding:0 8px 0 8px;
+	text-overflow:ellipsis;
+}

@@ -76,9 +76,14 @@
 /**
  */
 .px-dialog-wrapper.loading {
+}
+.px-dialog-wrapper.loading .px-dialog-wrapper-content {
+	background-color:Window;
+}
+.px-dialog-wrapper.loading .px-dialog-wrapper-content >div {
 	pointer-events:none;
-/*	opacity:0.5; */
 	cursor:wait;
+	opacity:0.5;
 }
 
 
@@ -94,3 +99,13 @@
 	border-radius:0;
 }
 
+
+/**
+ * Features
+ */
+.px-dialog hr {
+	height:1px;
+	border:0;
+	background-color:ButtonFace;
+	margin:24px 8px;
+}

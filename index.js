@@ -11,6 +11,8 @@ import Layout from './lib/ui/Layout/';
 import Panel from './lib/ui/Panel/';
 import Scrollbox from './lib/ui/Scrollbox/';
 import Toolbar from './lib/ui/Toolbar/';
+import Divider from './lib/ui/Divider/';
+import Button from './lib/ui/Button/';
 import Input from './lib/ui/Input/';
 import TextArea from './lib/ui/TextArea/';
 import Select from './lib/ui/Select/';
@@ -20,50 +22,94 @@ import Field from './lib/ui/Field/';
 import Loader from './lib/ui/Loader/';
 import Menu from './lib/ui/Menu/';
 import Tabs from './lib/ui/Tabs/';
+import Icon from './lib/ui/Icon/';
+
 import DataGrid from './lib/ui/DataGrid/';
+import ImageUpload from './lib/ui/ImageUpload/';
+
+import Rows from './lib/ui/Layout/Rows';
+import Row from './lib/ui/Layout/Row';
+import Cols from './lib/ui/Layout/Cols';
+import Col from './lib/ui/Layout/Col';
+import Enter from './lib/ui/Layout/Enter';
+import Block from './lib/ui/Layout/Block';
+
+import Hint from './lib/ui/Hint/Hint';
 
 
-/**
- */
-module.exports = {
+export {
+	Application,
+	Scene,
+	Form,
+	Alert,
+	Confirm,
+	Error,
+	Dialog,
+	Layout,
+	Panel,
+	Scrollbox,
 
-// Application controller
-	Application: Application,
+	Rows,
+	Row,
+	Cols,
+	Col,
+	Enter,
+	Block,
+	
+	Toolbar,
+	Divider,
+	Button,
+	Input,
+	TextArea,
+	Select,
+	Checkbox,
+	DatePicker,
+	Field,
+	Loader,
+	Menu,
+	Tabs,
+	Icon,
+	DataGrid,
+	ImageUpload,
+	
+	Hint
+};
 
-// Exteded component/Scene component with Navigator
-	Scene: Scene,
 
-// Form filler
-	Form: Form,
+export default {
+	Application,
+	Scene,
+	Form,
+	Alert,
+	Confirm,
+	Error,
+	Dialog,
+	Layout,
+	Panel,
+	Scrollbox,
 
-// Specific scenes
-	Alert: Alert,
-	Confirm: Confirm,
-	Error: Error,
+	Rows,
+	Row,
+	Cols,
+	Col,
+	Enter,
+	Block,
 
-// UI
-	Dialog: Dialog,
-	Layout: Layout,
-	Panel: Panel,
-	Scrollbox: Scrollbox,
-
-	Rows: Layout.Rows,
-	Row: Layout.Row,
-	Cols: Layout.Cols,
-	Col: Layout.Col,
-	Enter: Layout.Enter,
-
-	Toolbar: Toolbar,
-	Input: Input,
-	TextArea: TextArea,
-	Select: Select,
-	Checkbox: Checkbox,
-	DatePicker: DatePicker,
-	Field: Field,
-	Loader: Loader,
-	Menu: Menu,
-	Tabs: Tabs,
-
-// Advanced UI
-	DataGrid: DataGrid
+	Toolbar,
+	Divider,
+	Button,
+	Input,
+	TextArea,
+	Select,
+	Checkbox,
+	DatePicker,
+	Field,
+	Loader,
+	Menu,
+	Tabs,
+	Icon,
+	DataGrid,
+	ImageUpload,
+	
+	Hint
 };

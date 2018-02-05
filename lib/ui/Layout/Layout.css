@@ -9,36 +9,106 @@ body {
 }
 
 
-/**
- * Rows/Cols/Row/Col
- */
-
-.px-rows {
-	xdisplay:block;
+.px-cols {
 	display:table;
-	width:100%;
+	height:100%;
 }
-.px-cols,
-.px-row {
-	display:table;
-	xdisplay:table-row;
-	width:100%;	
+.px-row-container >.px-cols {
+	display:table-row;
 }
-
-
-
 .px-cols >.px-cols-container {
 	display:table-row;
-	width:100%;
-	
-	xheight:100%;
+	height:100%;
 }
+.px-col {
+	display:table-cell;
+	xheight:100%;
+	vertical-align:top;
+}
+.px-col >.px-col-container {
+	display:table;
+	width:100%;
+	height:100%;
+	xborder:1px green solid;
+}
+
+
+
+.px-rows {
+	display:block;
+	xbackground-color:yellow;
+	width:100%;
+}
+.px-rows.set-size {
+	display:table;
+}
+.px-row {
+	display:block;
+	width:100%;
+}
+.px-rows.set-size .px-row {
+	display:table-row;
+}
+.px-row >.px-row-container {
+	display:table;
+	width:100%;
+	height:100%;
+	xborder:1px red solid;
+}
+
+/**
+.px-rows {
+	display:table;
+	width:100%;
+}
+.px-row {
+	display:table-row;
+	width:100%;
+}
+.px-row >.px-row-container {
+	display:table;
+	width:100%;
+	height:100%;
+	border:1px red solid;
+}
+*/
+
+
+/*
+
+.px-row.px-row-sized {
+	display:table-row;
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.px-row.px-row-sized >.px-row-container {
+	xdisplay:block;
+	xposition:absolute;
+	xtop:0;
+	xright:0;
+	xbottom:0;
+	xleft:0;
+	border:1px red solid;
+	height:100%;
+}
+*/
+
+
+
+/*
 
 
 .px-row >.px-row-container {
 	display:table-row;
 	width:100%;
 	height:100%;
+
+	__position:absolute;
+	__top:0;
+	__right:0;
+	__bottom:0;
+	__left:0;
 }
 
 
@@ -49,7 +119,8 @@ body {
 	display:table;
 }
 
-
+/**/
+/*
 
 .px-col {
 	display:table-cell;
@@ -78,3 +149,6 @@ body {
 	bottom:0;
 	left:0;
 }
+
+/*
+*/

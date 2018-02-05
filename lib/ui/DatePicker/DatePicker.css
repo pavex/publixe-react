@@ -66,3 +66,9 @@ input.px-datepicker-input {
     width:32px;
     line-height:32px;
 }
+
+.react-datepicker__input-container input:disabled { 
+	background-color:transparent !important;
+}
+
+

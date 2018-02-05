@@ -7,6 +7,9 @@
 	height:100%;
 	position:relative;
 }
+.px-row-container >.px-datagrid {
+	xheight:100%;
+}
 .px-datagrid .px-datagrid-scrollbox {
 	position:absolute;
 	top:0;
@@ -28,6 +31,7 @@
 	background-color:WindowFrame;
 	color:WindowText;
 	font-weight:bold;
+	box-sizing:border-box;
 }
 .px-datagrid .px-datagrid-header .px-datagrid-cols {
 }
@@ -38,7 +42,7 @@
 	xtext-overflow:ellipsis;
 	xpadding:8px;
 	line-height:28px;
-	padding:0 8px 0 8px;
+	xpadding:0 8px 0 8px;
 	border-right:1px dotted ThreeDDarkShadow;
 }
 .px-datagrid .px-datagrid-header .px-datagrid-cols .px-datagrid-col:last-child {
@@ -48,12 +52,15 @@
 	padding-top:28px;
 	xborder-left:1px green solid;
 	xborder-top:1px green solid;
+	box-sizing:border-box;
 }
 .px-datagrid .px-datagrid-body .px-datagrid-rows {
 }
 .px-datagrid .px-datagrid-body .px-datagrid-rows .px-datagrid-row {
 	display:block;
-	overflow:auto;
+	xoverflow:auto;
+	height:30px;
+	xheight:2.1em;
 	cursor:default;
 }
 .px-datagrid.px-datagrid-row-select .px-datagrid-body .px-datagrid-rows .px-datagrid-row {
@@ -62,7 +69,7 @@
 .px-datagrid.px-datagrid-row-select .px-datagrid-body .px-datagrid-rows .px-datagrid-row:hover {
 	background-color:Highlight;
 }
-.px-datagrid.px-datagrid-row-select .px-datagrid-body .px-datagrid-rows .px-datagrid-row.selected {
+.px-datagrid.px-datagrid-row-select .px-datagrid-body .px-datagrid-rows .px-datagrid-row.selected div {
 	background-color:navy;
 	color:Window;
 }
@@ -73,6 +80,8 @@
 	float:left;
 	line-height:28px;
 	height:30px;
+	xheight:2.1em;
+	text-overflow:ellipsis;
 	overflow:hidden;
 	white-space:nowrap;
 	border-right:1px solid ThreeDlightShadow;
@@ -98,7 +107,8 @@
 	text-align:right;
 }
 .px-datagrid .px-control-text,
-.px-datagrid .px-control-date {
+.px-datagrid .px-control-date,
+.px-datagrid .px-control-select {
 	background-color:InfoBackground;
 }
 
@@ -156,6 +166,35 @@
 	background-color:transparent;
 	color:inherit;
 }
+
+
+/**
+ * Data grid select control
+ */
+ /*
+ 
+.px-datagrid .ui.selection.dropdown {
+	min-width:100%;
+	border:0;
+	padding:0;
+	background-color:transparent;
+}
+.px-datagrid .ui.visible.selection.dropdown {
+	background-color:#fff;
+}
+.px-datagrid .px-control-select {
+	overflow:visible !important;
+}
+*/
+
+.px-datagrid .Select-control {
+	border:0;
+	background-color:transparent;
+}
+.px-datagrid .Select--single > .Select-control .Select-value {
+	line-height:26px !important;
+}
+
 
 
 /**

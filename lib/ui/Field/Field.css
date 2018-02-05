@@ -18,8 +18,9 @@
 	vertical-align:middle;
 }
 .px-field >.px-field-container {
-	display:inline-block;
-	width:100%;
+	xdisplay:inline-block;
+	display:inline-grid;
+	xwidth:100%;
 }
 .px-field.atop >label,
 .px-field.atop >.px-field-container {
@@ -30,9 +31,31 @@
 	text-align:right;
 }
 .px-field.important .px-field-container input,
-.px-field.important .px-field-container .ui.selection.dropdown {
+.px-field.important .px-field-container .ui.selection.dropdown,
+.px-field.important .Select-control {
 	background-color:InfoBackground;
 }
 .px-field >span {
 	padding-left:8px;
 }
+
+
+div.ui.input {
+	width:inherit;
+}
+/*
+.error {
+}
+.error label {
+	color:red;
+}
+.error input {
+	background-color:#fff6f6 !important;
+	border-color:#e0b4b4 !important;
+	color:#9f3a38 !important;
+}
+sup.required {
+	padding-left:2px;
+	color:red;
+}
+*/

@@ -12,6 +12,16 @@
 	line-height:auto;
 	position:inherit;
 }
-.ui.input input[type=text]:read-only { 
-	color:InactiveCaptionText;
+.ui.input input {
+	padding: .5em !important;
+}
+.ui.input input:read-only { 
+/*	xcolor:InactiveCaptionText !important; */
+/*	xbackground-color:rgba(0, 0, 0, .006) !important; */
+	background-color:Menu !important;
+}
+.ui.input input:disabled { 
+	background-color:transparent !important;
+}
+.required .ui.input input {
 }
